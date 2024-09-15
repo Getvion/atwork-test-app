@@ -1,0 +1,31 @@
+.active {
+  margin: 40px 0;
+}
+
+.archived {
+  filter: grayscale(100%);
+}
+
+.cards {
+  margin-top: 28px;
+  display: flex;
+  gap: 40px 32px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 380px) {
+  .main {
+    margin-top: 32px;
+  }
+
+  .active {
+  }
+
+  .archived {
+  }
+
+  .cards {
+    margin-top: 16px;
+    gap: 20px;
+  }
+}
