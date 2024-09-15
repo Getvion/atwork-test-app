@@ -1,0 +1,16 @@
+.button {
+  color: var(#{--main-white});
+  background-color: var(#{--main-black});
+  padding: 12px 42px;
+
+  border-radius: 50px;
+
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out;
+
+  &:hover {
+    color: var(#{--main-black});
+    background-color: var(#{--main-white});
+  }
+}
