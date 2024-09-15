@@ -13,4 +13,13 @@
     color: var(#{--main-black});
     background-color: var(#{--main-white});
   }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    &:hover {
+      color: var(#{--main-white});
+      background-color: var(#{--main-black});
+    }
+  }
 }
