@@ -1,7 +1,7 @@
 import ArrowBack from 'assets/icons/arrow-left.svg?react';
 import AvatarFull from 'assets/images/avatar-full.png';
 import { Link } from 'react-router-dom';
-import { Button, Input, MainTitle, TextField } from 'shared/ui';
+import { Button, Input, MainTitle, Tab } from 'shared/ui';
 
 import styles from './Profile.module.scss';
 
@@ -18,10 +18,10 @@ export const Profile = () => {
         <div className={styles.user__image}>
           <img src={AvatarFull} alt='avatar full' />
           <div className={styles.tabs}>
-            <TextField textContent='Данные профиля' />
-            <TextField textContent='Рабочее пространство' />
-            <TextField textContent='Приватность' />
-            <TextField textContent='Безопасность' />
+            <Tab tabContent='Данные профиля' active />
+            <Tab tabContent='Рабочее пространство' active={false} />
+            <Tab tabContent='Приватность' active={false} />
+            <Tab tabContent='Безопасность' active={false} />
           </div>
         </div>
         <div className={styles.user__data}>

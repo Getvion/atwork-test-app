@@ -26,7 +26,7 @@ export const Main = () => {
           {actvieUsersData.length > 0 ? (
             actvieUsersData.map((user) => <UserCard key={user.id} userData={user} />)
           ) : (
-            <div>нет актинвых записей</div>
+            <div>нет актвных записей</div>
           )}
         </div>
       </div>
