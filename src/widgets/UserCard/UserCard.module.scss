@@ -1,0 +1,55 @@
+.card {
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  max-width: 360px;
+  width: 100%;
+  background: var(#{--main-white});
+  border-radius: 16px;
+}
+
+// .card__image {
+// }
+
+.card__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// .info__container {
+// }
+
+.card__username {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.32px;
+  color: var(#{--blue-accent});
+}
+
+.card__company {
+  color: var(#{--dark-gray});
+}
+
+.card__city {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+}
+
+.dots {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    flex-direction: column;
+    gap: 16px;
+    max-width: 162px;
+    padding: 16px;
+  }
+}
