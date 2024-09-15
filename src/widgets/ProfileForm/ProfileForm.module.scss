@@ -1,0 +1,26 @@
+.user__form {
+  margin-top: 24px;
+  max-width: 420px;
+
+  label + label {
+    margin-top: 24px;
+  }
+
+  button {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .user__form {
+    margin-top: 20px;
+
+    label + label {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 24px;
+    }
+  }
+}
