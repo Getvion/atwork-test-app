@@ -2,7 +2,7 @@ import ArrowBack from 'assets/icons/arrow-left.svg?react';
 import AvatarFull from 'assets/images/avatar-full.png';
 import { Link } from 'react-router-dom';
 import { MainTitle, Tab } from 'shared/ui';
-import { ProfileForm } from 'widgets/index';
+import { ProfileForm } from 'widgets';
 
 import styles from './Profile.module.scss';
 
