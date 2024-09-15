@@ -1,14 +1,11 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 
-// import { modalWindows, projectCosts, projectData, projectsData, userData } from './index';
+import { archivedUsers, usersData } from './index';
 
 export const store = configureStore({
   reducer: {
-    // userData,
-    // modalWindows,
-    // projectsData,
-    // projectData,
-    // projectCosts
+    usersData,
+    archivedUsers
   }
 });
 
