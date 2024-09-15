@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
 import CloseIcon from 'assets/icons/close.svg?react';
 import { useState } from 'react';
 
@@ -39,7 +38,7 @@ export const Input = ({ onChange, onBlur, onFocus, onClick, textContent }: IInpu
         onChange={onInputChange}
       />
       {inputValue && (
-        <button className={styles.close__button} onClick={onClearClick}>
+        <button aria-label='close' className={styles.close__button} onClick={onClearClick}>
           <CloseIcon />
         </button>
       )}
