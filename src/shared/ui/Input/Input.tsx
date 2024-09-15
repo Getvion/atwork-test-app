@@ -4,11 +4,11 @@ import { useState } from 'react';
 import styles from './Input.module.scss';
 
 interface IInputProps extends Omit<React.ComponentPropsWithoutRef<'input'>, 'onClick'> {
-  onClick: () => void;
+  onClearClick: () => void;
   textContent: string;
 }
 
-export const Input = ({ onChange, onBlur, onFocus, onClick, textContent }: IInputProps) => {
+export const Input = ({ onChange, onBlur, onFocus, onClearClick, textContent }: IInputProps) => {
   const [inputValue, setInputValue] = useState('');
 
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,10 +19,10 @@ export const Input = ({ onChange, onBlur, onFocus, onClick, textContent }: IInpu
     }
   };
 
-  const onClearClick = () => {
+  const onCloseClick = () => {
     setInputValue('');
 
-    onClick();
+    onClearClick();
   };
 
   return (
@@ -38,7 +38,7 @@ export const Input = ({ onChange, onBlur, onFocus, onClick, textContent }: IInpu
         onChange={onInputChange}
       />
       {inputValue && (
-        <button aria-label='close' className={styles.close__button} onClick={onClearClick}>
+        <button aria-label='close' className={styles.close__button} onClick={onCloseClick}>
           <CloseIcon />
         </button>
       )}
