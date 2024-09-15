@@ -1,0 +1,44 @@
+.label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.input {
+  padding: 10px 40px 10px 16px;
+  border: 2px solid var(#{--light-gray});
+  background-color: transparent;
+  border-radius: 50px;
+  outline: none;
+  color: var(#{--main-black});
+
+  &:empty {
+    color: var(#{--dark-gray});
+  }
+}
+
+.close__button {
+  position: absolute;
+  right: 18px;
+  bottom: 13px;
+}
+
+@media screen and (max-width: 375px) {
+  .text {
+    font-size: 14px;
+  }
+
+  .input {
+    font-size: 14px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5;
+  }
+
+  .close__button {
+    display: none;
+  }
+}
